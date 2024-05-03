@@ -8,7 +8,7 @@ cover: https://kolha.top/images/covers/yTAIpTa.jpg
 ---
 אתם חייבים לנסות את הקציצות בקר ושעועית ירוקה האלו! זה תבשיל מצוין לארוחת שישי בשרית או ארוחת צהריים לילדים או לקחת לעבודה. המתכון קל ויוצא מצוין!
 ## מצרכים:
-{% matkoning %}
+
 
 #### לבשר:
 - 500 גרם בשר טחון
@@ -40,7 +40,7 @@ cover: https://kolha.top/images/covers/yTAIpTa.jpg
 - 2 כוסות מים
 
 
-{% divend %}
+
 
 ## הוראות הכנה:
 
@@ -53,7 +53,7 @@ cover: https://kolha.top/images/covers/yTAIpTa.jpg
 5. מבשלים את הרוטב עם הכדורים באש בינונית למשך שעה.
 ![כל מרכיבי הרוטב מטבשלים עם הכדורים באש בינונית](https://kolha.top/images/Yt2qzzP/meatballs-cooking-with-all-the-juice.jpg)
 
-{% taavon %}
+
 <small><div property="aggregateRating"  typeof="AggregateRating">  <span  property="ratingValue">4</span> כוכבים -   מבוסס על <span  property="reviewCount">1</span> ביקורות  </div></small>
 
 <small>צופית בן יוסף</small>

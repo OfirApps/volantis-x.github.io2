@@ -10,7 +10,7 @@ cover: https://kolha.top/images/covers/fy6oO9y.jpg
 אתם חייבים לנסות את המתכון לפאי פרג ושוקולד הזה!
 מדובר במתכון מיוחד שמשלב את המתיקות של השוקולד עם הטעם העשיר של הפרג. הפאי מורכב מבצק קריספי ומלית עשירה, והוא בטוח להפתיע ולשמח את כל מי שיטעמו. המתכון פשוט להכנה ומתאים לכל אחד, גם אם אתם לא בעלי ניסיון באפייה. אז בואו נתחיל!
 ## מצרכים:
-{% matkoning %}
+
 
 #### לבצק:
 
@@ -31,7 +31,7 @@ cover: https://kolha.top/images/covers/fy6oO9y.jpg
 -   תמצית וניל
 -   250 מ"ל שמנת מתוקה
 
-{% divend %}
+
 
 ## הוראות הכנה:
 1.  נערבב בקערה את הקמח, תמצית הווניל, החמאה המומסת, אבקת הסוכר, הביצה ואבקת האפיה.
@@ -44,7 +44,7 @@ cover: https://kolha.top/images/covers/fy6oO9y.jpg
 8.  נאפה בתנור שחומם מראש ל-170 מעלות למשך 40 דקות.
 
 
-{% taavon %}
+
 <small><div property="aggregateRating"  typeof="AggregateRating">  <span  property="ratingValue">3.6</span> כוכבים -   מבוסס על <span  property="reviewCount">6</span> ביקורות  </div></small>
 
 <small>צופית בן יוסף</small>

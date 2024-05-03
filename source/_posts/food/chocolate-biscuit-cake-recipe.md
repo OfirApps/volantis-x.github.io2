@@ -10,7 +10,7 @@ cover: https://kolha.top/images/covers/jQDECh5.png
 עוגת ביסקוויטים מבושלת מדהימה וטעימה! הכנתי את המתכון בפעם הראשונה והוא היה מפוצץ! העוגה נימוחה ונמסה בבפה ולא מתוקה מידי, עוגה באמת של הטופ
 
 ## מצרכים:
-{% matkoning %}
+
 #### לעוגה:
 - תבנית בינונית
 - שרוול של ביסקוויטים
@@ -24,7 +24,7 @@ cover: https://kolha.top/images/covers/jQDECh5.png
 - 50 מ"ל של שמנת מתוקה
 - 100 גרם של שוקולד חלב או מריר
 
-{% divend %}
+
 
 ## הוראות הכנה:
 1. מניחים בסיר את הקקאו, השוקולד, כוס מים, מרגרינה או חמאה, תמצית רום וסוכר ומערבבים באש בינונית.
@@ -34,7 +34,7 @@ cover: https://kolha.top/images/covers/jQDECh5.png
 5. מבשלים את השמנת המתוקה עם השוקולד, מערבבים עד לקבלת לתערובת חלקה ומניחים מעל.
 6. ממתינים לפחות יום אחד לפני ההגשה.
 
-{% taavon %}
+
 <small><div property="aggregateRating"  typeof="AggregateRating">  <span  property="ratingValue">4.4</span> כוכבים -   מבוסס על <span  property="reviewCount">2</span> ביקורות  </div></small>
 
 <small>צופית בן יוסף</small>
