@@ -1,0 +1,17 @@
+{
+  "short_name": "כל הטופ",
+  "name": "כל הטופ",
+  "icons": [{
+    "src": "https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/android-chrome-512x512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }, {
+    "src": "https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/android-chrome-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "./index.html"
+}

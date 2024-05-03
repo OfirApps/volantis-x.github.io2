@@ -1,0 +1,47 @@
+<div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    <style>
+      .oficon {
+        font-size: 1rem !important;
+      }
+      @media (max-width: 500px) { 
+        .oficon {
+          font-size: 2rem !important;
+        }
+       }
+    </style>
+    <% getList(theme.article.body.meta_library.share).forEach(function(item){ %>
+      <% if (item.id == 'qrcode'){ %>
+        <% var src = qrcode(url,{margin:1,size:8}); %>
+        <div class='hoverbox'>
+          <a class='share'><img src="<%- item.img %>"></a>
+          <div class='target'>
+            <img src="<%- src %>">
+          </div>
+        </div>
+      <% } else if (item.id && (item.img || item.icon)) { %>
+        <a class="-mob-share-<%- item.id %>" title="<%- item.name %>" rel="external nofollow noopener noreferrer"
+          <% if (item.id == 'qzone'){ %>
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<%- post.permalink %>&title=<%- (post.seo_title || post.title) + ' - ' + config.title %><%- (post.thumbnail) ? '&pics=' + (post.thumbnail) : '' %>&summary=<%- strip_html(post.excerpt) %>"
+          <% } else if (item.id == 'qq'){ %>
+          href="http://connect.qq.com/widget/shareqq/index.html?url=<%- post.permalink %>&title=<%- (post.seo_title || post.title) + ' - ' + config.title %><%- (post.thumbnail) ? '&pics=' + (post.thumbnail) : '' %>&summary=<%- strip_html(post.excerpt) %>"
+          <% } else if (item.id == 'weibo'){ %>
+          href="http://service.weibo.com/share/share.php?url=<%- post.permalink %>&title=<%- (post.seo_title || post.title) + ' - ' + config.title %><%- (post.thumbnail) ? '&pics=' + (post.thumbnail) : '' %>&summary=<%- strip_html(post.excerpt) %>"
+          <% } else if (item.id == 'telegram'){ %>
+            href="https://t.me/share/url?url=<%- post.permalink %>&text=<%- (post.seo_title || post.title) + ' - ' + config.title %>"
+          <% } else if (item.id == 'whatsapp'){ %>
+            href="https://api.whatsapp.com/send?text=<%- post.permalink %>"
+          <% } else if (item.id == 'facebook'){ %>
+            href="https://www.facebook.com/sharer/sharer.php?u=<%- post.permalink %>"
+          <% } %>
+          >
+          <% if (item.img){ %>
+            <img src="<%- item.img %>">
+          <% } else if (item.icon){ %>
+            <i class="fa-brands <%- item.icon %> oficon" ></i>
+          <% } %>
+        </a>
+      <% } %>
+    <% }) %>
+  </div>
+</div>

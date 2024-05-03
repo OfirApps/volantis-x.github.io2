@@ -1,0 +1,250 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: כל הטופ
+subtitle: 'ורק הטופ'
+description: "כל הטופ הינו בלוג המכיל המלצות לטיולים, גאדג'טים, ריכוליות ועוד!"
+keywords: 'רכילות, ריכולים, סלבריטים, טיולים, יוון, דרום אמריקה, טיול אחרי צבע, טכנולוגיה, חרבות ברזל, ריכול, טיול, אהבה, הלם'
+author: 'איילה'
+language: 'he'
+timezone: 'Asia/Jerusalem'
+avatar: https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/favicon-150x150.png
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://kolha.top/
+root: /
+permalink: :title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - README.md
+  - '**/*.html'
+  - manifest.json
+  - start
+  - CNAME
+  - robots.txt
+  - assets/*
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+auto_spacing: true
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 1
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: false
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: '    '
+  wrap: true
+  hljs: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+  "אוסף-אטרקציות": אוסף
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+updated_option: false
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: icarus
+
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+# npm install hexo-deployer-git --save
+deploy:
+  - type: git
+    # repo: git@github.com:volantis-x/volantis-x.github.io.git
+    repo: git@xaoxuu.com:xaoxuu/volantis.git
+    branch: master
+    message: "Github CI Auto Builder at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
+# ssh-keygen -t rsa -b 4096 -C "xaoxuu@gmail.com" -N "" -f deploy_key
+# 生成一对: deploy_key, deploy_key.pub，其中 deploy_key 填到源码仓库的 Secrets 的 DEPLOY_KEY 中，deploy_key.pub 填到静态文件仓库的 Deploy keys 中。
+
+# 全局导入
+import:
+  head_begin:
+    - <meta name="msapplication-TileColor" content="#ffffff">
+    - <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/browserconfig.xml">
+    - <meta name="theme-color" content="#ffffff">
+    - <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/apple-touch-icon.png">
+    - <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/favicon-32x32.png">
+    - <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/favicon-16x16.png">
+    - <link rel="manifest" href="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/site.webmanifest">
+    - <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/favicon.ico">
+    - <meta name="apple-mobile-web-app-title" content="כל הטופ">
+    - <meta name="application-name" content="כל הטופ">
+    - <meta name="msapplication-TileColor" content="#f4f4f4">
+    - <meta name="msapplication-TileImage" content="https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/favicon-32x32.png">
+    - '<meta name="theme-color" content="#f4f4f4" media="(prefers-color-scheme: light)">'
+    - '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">'
+    - '<script src="https://cdn.jsdelivr.net/gh/OfirApps/files@48266cfcffaa773708397c038eb4018de0ffc4b2/ect.js" defer></script>'
+    - '<link rel="stylesheet" type="text/css" media="print" href="/print_version.css">'
+    - '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8577850668418356"
+     crossorigin="anonymous" defer></script>'
+  head_end:
+  body_begin:
+  # body_end:
+  #   - <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js"></script>
+  #   - <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+  #   - <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  #   - | 
+  #     <script>
+  #       volantis.css("https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-dark.css")
+  #     </script>
+    # - <script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js").then(function(n){n.onupdatefound=function(){var e=n.installing;e.onstatechange=function(){switch(e.state){case"installed":navigator.serviceWorker.controller?console.log("Updated serviceWorker."):console.log("serviceWorker Sucess!");break;case"redundant":console.log("The installing service worker became redundant.")}}}}).catch(function(e){console.log("Error during service worker registration:",e)}); </script>
+
+# https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
+
+
+# npm i hexo-neat
+neat_enable: true
+
+# npm i hexo-hide-posts
+hide_posts:
+  # Should hexo-hide-posts be enabled.
+  enable: true
+
+  # The front-matter key for flagging hidden posts.
+  # You can change the filter name if you like.
+  filter: hidden
+
+  # Add "noindex" meta tag to prevent hidden posts from being indexed by search engines.
+  noindex: true
+
+  # Generators in the allowlist will have access to the hidden posts.
+  # Common generators in Hexo: 'index', 'tag', 'category', 'archive', 'sitemap', 'feed'
+  # allowlist_generators: []
+
+  # Generators in the blocklist can *not* access the hidden posts.
+  # The allowlist has higher priority than the blocklist, if both set.
+  # blocklist_generators: ['*']
+
+# hexo-generator-amp
+# The following settings is the quick start options.
+# hexo-autonofollow
+nofollow:
+  enable: true
+  exclude:
+  - kolha.top
+
+# criticalcss:
+#   critical:
+#   minify: true
+
+# filter_optimize:
+#   enable: true
+#   # static resource versioning
+#   versioning: false
+#   css:
+#     # minify all css files
+#     minify: true
+#     excludes:
+#     # use preload to load css elements dynamically
+#     delivery:
+#       - '@fortawesome/fontawesome-free'
+#       - 'fonts.googleapis.com'
+#     # make specific css content inline into the html page
+#     inlines:
+#       # support full path only
+#       - css/main.css
+#   js:
+#     # minify all js files
+#     minify: true
+#     excludes:
+#     # remove the comments in each of the js files
+#     remove_comments: false
+#   html:
+#     # minify all html files
+#     minify: true
+#     excludes:
+#   # set the priority of this plugin,
+#   # lower means it will be executed first, default of Hexo is 10
+#   priority: 12
+
+# autoprefixer
+autoprefixer:
+  exclude:
+  - '*.min.css'
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: false
+  modifyAnchors: 0
+  autolink: true
+  sanitizeUrl: false
+  headerIds: true
+  prependRoot: false
+  external_link:
+    enable: true
+    exclude: []
+    nofollow: true

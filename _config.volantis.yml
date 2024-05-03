@@ -1,0 +1,482 @@
+# debug: false
+cdn:
+  enable: false
+navbar:
+  search: חיפוש...
+  logo: # choose [img] or [icon + title]
+    title: כל הטופ
+    icon: fa-duotone fa-hundred-points
+    img: #
+    #img: https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/favicon-150x150.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+  menu:
+    - name: טיולים
+      icon: fa-duotone fa-plane faa-tada
+      url: https://kolha.top/categories/טיולים/
+
+    # - name: טכנולוגיה
+    #   icon: fa-duotone fa-mobile faa-tada
+    #   url: tech/
+
+    # - name: חדשות
+    #   icon: fa-duotone fa-newspaper faa-tada
+    #   url: news/
+
+    - name: אוכל
+      icon: fa-duotone fa-fork-knife faa-tada
+      url: https://kolha.top/categories/מתכונים/ #food/
+
+    # - name: Community
+    #   icon: fa-duotone fa-fan fa-spin
+    #   url: contributors/
+
+    # - name: הגדרות
+    #   icon: fa-duotone fa-cog
+    #   rows:
+    #     - name: מצב לילה\מצב חשוך
+    #       icon: fa-solid fa-moon
+    #       toggle: darkmode
+    #       customvalueforantiseodegrading: "nofollow"
+    #     # - name: Music
+    #     #   icon: fa-duotone fa-compact-disc fa-spin
+    - name: עוד
+      icon: fa-duotone fa-ellipsis-v
+      rows:
+        - name: מידע על האתר
+          icon: fa-duotone fa-info-circle
+          url: /about
+        - name: מצב לילה
+          icon: fa-solid fa-moon
+          toggle: darkmode
+          customvalueforantiseodegrading: "nofollow"
+
+
+
+
+cover:
+  # height_scheme: full # full, half
+  layout_scheme: dock # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  title: 'כל ה<b>טופ</b>'
+  subtitle: 'טיולים אוכל וכל מה שבטופ!'
+  background: 'https://cdn.jsdelivr.net/gh/OfirApps/files@main/back.webp'
+  features:
+    - name: טיולים
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2708.svg
+      url: https://kolha.top/categories/טיולים/
+      alt: "מטוס"
+      width: 44px
+      target: _self
+    # - name: טכנולוגיה
+    #   img: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4c0.svg
+    #   url: /tech/
+    #   alt: "דיסק"
+    #  width: 44px
+    #  target: _self
+    - name: <b>המשך</b>
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2b07.svg
+      url: 'javascript:scrolltobodyMainPage()'
+      alt: "חץ המופנה כלפי מטה"
+      width: 44px
+      target: _self
+      changeable: true
+      cimg: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e0.svg
+      curl: https://kolha.top/
+      cname: <b>בית</b>
+      calt: "בית"
+    - name: אוכל
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f963.svg
+      url: https://kolha.top/categories/מתכונים/
+      alt: "קערה עם כפית"
+      width: 44px
+      target: _self
+    # - name: חדשות
+    #   img: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4f0.svg
+    #   url: /news
+    #   alt: "עיתון"
+    #   width: 44px
+
+
+article:
+  preview:
+    scheme: landscape # landscape
+    # pin icon for post
+    pin_icon: volantis-static/media/twemoji/assets/svg/1f525.svg
+    # auto generate title if not exist
+    auto_title: true # false, true
+    # auto generate excerpt if not exist
+    auto_excerpt: true # false, true
+    author: true
+    # show readmore button
+    readmore: auto # auto, always
+  body:
+    top_meta: [author, category, date, counter,share]
+    bottom_meta: [tags] #share updated
+    footer_widget:
+      references:
+        title: Reference
+        icon: fa-solid fa-quote-left
+      related_posts:
+        enable: true
+        title: מאמרים נוספים בנושא זה
+        icon: fa-solid fa-bookmark
+        max_count: 5
+      copyright:
+        enable: false
+        permalink: 'הכתובת הקבועה של הפוסט הזה: '
+        content:
+          - 'תוכן הבלוג עוקב אחר ייחוס-שימוש לא מסחרי-שיתוף באותו אופן 4.0 הבינלאומי (CC BY-NC-SA 4.0)'
+          - permalink
+    meta_library:
+      author:
+        avatar: https://cdn.jsdelivr.net/gh/OfirApps/files@main/ibb-protected-url.webp
+        name: איילה
+        url: https://kolha.top/about#ayala
+        alt: "איילה, צוות כל הטופ"
+      date:
+        icon: fa-solid fa-calendar-alt
+        title: 'פורסם בתאריך:'
+        format: 'll'
+      updated:
+        title: 'עודכן לאחרונה:'
+      counter:
+        icon: fa-solid fa-eye
+        unit: 'צפיות'
+      share:
+        - id: telegram
+          icon: fa-telegram # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+        - id: whatsapp
+          icon: fa-whatsapp # volantis-static/media/org.volantis/logo/128/whatsapp.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+        - id: facebook
+          icon: fa-facebook # volantis-static/media/org.volantis/logo/128/facebook.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+
+comments:
+  title: <i class='fa-solid fa-comments'></i> תגובות
+  subtitle: שאלות? דעות? פה זה המקום לכתוב
+  service: disqus
+  disqus:
+    shortname: kolhatop
+    autoload: false
+  #  path: /
+  # valine:
+  #   appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
+  #   appKey: RJGiOYFc1fBvfox4frBPpRzU
+  #   path: /
+  # utterances:
+  #   repo: utterance/utterances
+  #   issue-number: 1
+
+sidebar:
+  position: right # left right
+  for_page: [post, category, tagcloud] #music
+  for_post: [toc, category, tagcloud] #music
+  widget_library:
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-list
+        title: תוכן עניינים
+      list_number: false
+      min_depth: 2
+      max_depth: 5
+    category:
+      class: category
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-folder-open
+        title: קטגוריות
+        url: /blog/categories/
+    # ---------------------------------------
+    # tagcloud widget
+    tagcloud:
+      class: tagcloud
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-tags
+        title: תגים
+        url: /blog/tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: '#999'
+      end_color: '#555'
+    # post:
+    #   class: text
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fa-solid fa-plus
+    #     title: Community Activity
+    #     url: /contributors/
+    #   content:
+    #     - '**How to get your articles included here?**<br>The official website is open source. As long as your article is related to the Hexo blog construction, you can self-index it. For detailed steps, please see:「[**Publish and share articles**](/contributors/#发布与分享文章)」。'
+    # Document Navigation
+    guide:
+      class: grid
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-map-signs
+        title: Category Navigation
+      fixed: true # fixed width
+      rows:
+        - name: FAQ
+          icon: fa-solid fa-question-circle
+          url: faqs/
+        - name: sample blog
+          icon: fa-solid fa-play-circle
+          url: examples/
+        - name: special thanks
+          icon: fa-solid fa-handshake
+          url: contributors/
+        - name: test blog post
+          icon: fa-solid fa-file-alt
+          url: archives/
+        - name: theme source code
+          icon: fa-solid fa-file-code
+          url: https://github.com/volantis-x/hexo-theme-volantis/
+          rel: external nofollow noopener noreferrer
+          target: _blank
+        - name: update log
+          icon: fa-solid fa-tags
+          url: https://github.com/volantis-x/hexo-theme-volantis/releases/
+          rel: external nofollow noopener noreferrer
+          target: _blank
+
+    # docs-volantis-latest:
+    #   class: group
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   seo_title: Volantis
+    #   header:
+    #     icon: fa fa-book
+    #     title: Document navigation v5.0
+
+    # qrcode widget
+    # qrcode:
+    #   class: qrcode
+    #   display: [desktop] # [desktop, mobile]
+    #   header:
+    #     icon: fa-solid fa-mobile
+    #     title: Mobile watch
+    #   height: #64px  # Automatic height if not set
+    #   fancybox: #true
+    #   images:
+    #     - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png
+
+    help:
+      class: page
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-headset
+        title: Help
+      pid: faq
+      content: excerpt # excerpt, more, content
+
+    news:
+      class: list
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-exclamation-triangle
+        title: Recent announcement
+      rows:
+        - name: Updates on themes and documents
+          icon: fa-solid fa-info-circle
+          url: https://github.com/volantis-x/hexo-theme-volantis/issues/215
+        - name: Upgrade Assistant
+          icon: fa-solid fa-angle-double-up
+          url: /getting-started/#new-version-update
+
+    # docs-v2:
+    #   class: group
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fa-duotone fa-list-alt
+    #     title: Document navigation v2
+
+    # docs-v3:
+    #   class: group
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fa-duotone fa-list-alt
+    #     title: Document navigation v3
+
+    # docs-v4:
+    #   class: group
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fa-duotone fa-list-alt
+    #     title: Document navigation v4
+
+    # docs-latest:
+    #   class: group
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fa-duotone fa-book
+    #     title: Document navigation v5.0
+
+
+
+site_footer:
+  layout: [social, copyright]
+  copyright: '[כל הטופ - ©2023](https://kolha.top/about)'
+  social:
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
+      url: atom.xml
+      alt: פיד RSS
+    # # - img: volantis-static/media/org.volantis/icon/1322024-social-media/029-github.svg
+    # #   url: https://github.com/volantis-x/
+    # #   alt: גיטהאב
+    # - img: volantis-static/media/org.volantis/icon/1322024-social-media/010-facebook.svg
+    #   url: /
+    #   alt: פייסבוק
+    # # - img: volantis-static/media/org.volantis/icon/1322024-social-media/018-twitter.svg
+    # #   url: /
+    # #   alt: טוייטר
+    # # - img: volantis-static/media/org.volantis/icon/1322024-social-media/045-telegram.svg
+    # #   url: /
+    # #   alt: טלגרם
+    # - img: volantis-static/media/org.volantis/icon/1322024-social-media/006-youtube.svg
+    #   url: /
+    #   alt: יוטיוב
+  analytics: >
+    <span id="lc-sv">The total number of visits to this site is <span id='number'><i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> times</span>
+    <span id="lc-uv">The number of visitors is <span id='number'><i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span>
+
+
+tag_plugins:
+  # {% note text %}
+  note: # style for default note:
+    iconfont: 'Font Awesome 6 Pro'
+
+plugins:
+  # hexo-generator-amp
+# The following settings is the quick start options.
+
+  generator_amp:
+    templateDir:  amp-template
+    assetDistDir: amp-dist
+    logo:
+      path:   sample/sample-logo.png
+      width:  600
+      height: 60
+    substituteTitleImage:
+      path:   sample/sample-substituteTitleImage.png
+      width:  1024
+      height: 800
+    warningLog: false   # To display warning, please set true.
+  # criticalcss:
+  # critical:
+  #   minify: true
+  # filter_optimize:
+  # enable: true
+  # # static resource versioning
+  # versioning: false
+  # css:
+  #   # minify all css files
+  #   minify: true
+  #   excludes:
+  #   # use preload to load css elements dynamically
+  #   delivery:
+  #     - '@fortawesome/fontawesome-free'
+  #     - 'fonts.googleapis.com'
+  #   # make specific css content inline into the html page
+  #   inlines:
+  #     # support full path only
+  #     - css/main.css
+  # js:
+  #   # minify all js files
+  #   minify: true
+  #   excludes:
+  #   # remove the comments in each of the js files
+  #   remove_comments: false
+  # html:
+  #   # minify all html files
+  #   minify: false
+  #   excludes:
+  # set the priority of this plugin,
+  # lower means it will be executed first, default of Hexo is 10
+  priority: 12
+  nodewaves:
+    enable: true
+  clipboard:
+    enable: true
+  # fontawesome: volantis-static/libs/@fortawesome/fontawesome-pro/css/all.min.css
+  fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+  code_highlight: prismjs # highlightjs or prismjs
+  parallax:
+    enable: false
+    position: fixed
+    images:               # For personal use only. At your own risk if used for commercial purposes !!!
+      # 尺寸一致图片测试
+      - https://example.com/webp.webp #url
+
+  aplayer:
+    enable: false
+    autoplay: false
+    volume: 0.4
+    order: random
+    # id: 4917530132 # vol red
+    # id: 4917524698 # vol blue
+    # id: 76244489 # vol white
+    id: 5135845906 # for Volantis 3.0
+    # id: 5062959861 # TOP 30
+
+  darkmode:
+    enable: true
+  scrollreveal:
+    enable: true
+  comment_typing:
+    enable: true
+  sitesjs:
+    enable: true
+  friendsjs:
+    enable: false
+  contributorsjs:
+    enable: false
+  preload:
+    enable: true
+    service: flying_pages # instant_page, flying_pages
+  #   instant_page: volantis-static/libs/instant_page/instant_page.js # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/instant_page.js
+    flying_pages: https://cdnjs.cloudflare.com/ajax/libs/flying-pages/2.1.2/flying-pages.min.js # https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+
+  pjax:
+    enable: true
+    cover: true 
+    animation: nprogress # false, nprogress, circle
+
+analytics: false
+
+style:
+  font_smoothing: true
+  navbar:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  sidebar:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  body:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+
+
+custom_css:
+  cursor:
+    enable: false
+  fontfamily:
+    bodyfont:
+      fontfamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"'
+    codefont:
+      fontfamily: 'SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace'
+      
+open_graph:
+  image: https://cdn.jsdelivr.net/gh/OfirApps/files@main/favicon/android-chrome-192x192.png
+  twitter_card: summary # summary_large_image , summary
+  #twitter_id:
+  #twitter_site:
+
+seo:
+  # When there are no keywords in the article's front-matter, use tags as keywords.
+  use_tags_as_keywords: true
+  # When there is no description in the article's front-matter, use excerpt as the description.
+  use_excerpt_as_description: true
+  robots:
+    home_first_page: index,follow
+    home_other_pages: noindex,follow
+    archive: noindex,follow
+    category: noindex,follow
+    tag: noindex,follow
+    # robots can be written in front-matter
