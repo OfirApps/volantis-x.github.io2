@@ -1,0 +1,66 @@
+common:
+    archive:
+        one: 'ארכיון'
+        other: 'ארכיונים'
+    category:
+        one: 'קטגוריה'
+        other: 'קטגוריות'
+    tag:
+        one: 'תג'
+        other: 'תגיות'
+    post:
+        one: 'פוסט'
+        other: 'פוסטים'
+    page:
+        one: 'עמוד'
+        other: 'עמודים'
+    prev: 'הקודם'
+    next: 'הבא'
+widget:
+    follow: 'מעקב'
+    recents: 'אחרונים'
+    links: 'קישורים'
+    catalogue: 'קטלוג'
+    subscribe_email: 'הירשמו לעדכונים'
+    subscribe: 'הרשמה'
+    adsense: 'פרסומת ממומנת'
+    followit: 'follow.it'
+article:
+    created_at: 'פורסםnbsp;%s'
+    updated_at: 'עודכן&nbsp;%s'
+    more: 'המשך קריאה'
+    comments: 'תגובות'
+    read_time: 'זמן קריאה - %s'
+    word_count:
+        one: 'בערך %d מילה'
+        other: 'בערך %d מילים'
+    licensing:
+        author: 'כותב'
+        created_at: 'פורסם ב'
+        updated_at: 'עודכן ב'
+        licensed_under: 'תחת רישיון'
+donate:
+    title: 'אהבתם את המאמר? תתמכו באתר בעזרת'
+    afdian: 'Afdian.net'
+    alipay: 'Alipay'
+    wechat: 'Wechat'
+    paypal: 'Paypal - פייפאל'
+    patreon: 'Patreon'
+    buymeacoffee: 'Buy me a coffee - קנו לי קפה'
+plugin:
+    backtotop: 'בחזרה למעלה'
+    visit_count: '%s&nbsp;צפיות'
+    visitor_count: 'נצפה על ידי %s משתמשים'
+    cookie_consent:
+      message: אנחנו משתמשים בעוגיות
+      dismiss: הבנתי!
+      allow: אישור שימוש בעוגיות
+      deny: דחייה
+      link: לעוד פרטים
+      policy: Cookie Policy
+search:
+    search: 'חיפוש'
+    hint: 'כתבו משהו...'
+    no_result: 'לא נמצאו תוצאות ל'
+    untitled: '(אין שם)'
+    empty_preview: '(אין הצצה)'
