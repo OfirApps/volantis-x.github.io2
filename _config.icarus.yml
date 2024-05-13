@@ -105,11 +105,11 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
+        עמוד הבית: /
+        קטגוריות: /categories
+        תגיות: /tags
+        עלינו: /about
+        ארכיון: /archives
     # Links to be shown on the right of the navigation bar
     # links:
     #     Download on GitHub:
@@ -164,7 +164,7 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: ''
+    shortname: 'kolhatop'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -192,9 +192,9 @@ donates:
     -
         type: paypal
         # Paypal business ID or email address
-        business: ''
+        business: 'company@kolha.top'
         # Currency code
-        currency_code: USD
+        currency_code: ILS
     # Wechat donate button configurations
     -
         type: wechat
